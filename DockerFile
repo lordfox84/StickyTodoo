@@ -1,0 +1,8 @@
+# Použijeme jednoduchý webový server pro statické stránky
+FROM nginx:latest
+
+# Zkopíruj obsah aplikace do nginx kontejneru
+COPY . /usr/share/nginx/html
+
+# Kontejner bude dostupný na portu 80
+EXPOSE 80
