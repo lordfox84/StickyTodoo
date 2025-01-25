@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Todoo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="board">
+        <div class="column" id="todo">
+            <h3>To Do</h3>
+        </div>
+        <div class="column" id="inprogress">
+            <h3>In Progress</h3>
+        </div>
+        <div class="column" id="done">
+            <h3>Done</h3>
+        </div>
+    </div>
+
+    <button class="add-task-button">+</button>
+
+    <div class="modal" id="taskModal">
+        <div class="modal-content">
+            <h3>Nový Úkol</h3>
+            <label for="taskTitle">Název</label>
+            <input type="text" id="taskTitle">
+
+            <label for="taskDescription">Popis</label>
+            <input type="text" id="taskDescription">
+
+            <label for="taskPriority">Priorita</label>
+            <select id="taskPriority">
+                <option value="Low">Nízká</option>
+                <option value="Medium">Střední</option>
+                <option value="High">Vysoká</option>
+            </select>
+
+            <label for="taskColor">Barva</label>
+            <input type="color" id="taskColor" value="#ffffff">
+
+            <button id="saveTaskButton">Uložit</button>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
