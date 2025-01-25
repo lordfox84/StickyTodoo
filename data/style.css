@@ -16,7 +16,7 @@ body {
 
 .board {
     display: flex;
-    gap: 10px; /* mezera mezi sloupci */
+    gap: 15px; /* mezera mezi sloupci */
     padding: 20px;
     align-items: flex-start; /* Důležité: zajistí, že sloupce mají nezávislou výšku */
     width: 90%;
@@ -35,6 +35,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.836));
 }
 
 #todo {
@@ -54,6 +55,7 @@ body {
     border-radius: 10px;
     cursor: grab;
     margin-bottom: 10px;
+    word-wrap: break-word;
 }
 
 .add-task-button {

@@ -1,8 +1,10 @@
 services:
   web:
-    build: .
+    build:
+      context: .
+      dockerfile: DockerFile
     ports:
-      - "8080:80" # Místní port 8080 bude mapován na port 80 uvnitř kontejneru
+      - "8081:80" # Místní port 8080 bude mapován na port 80 uvnitř kontejneru
     volumes:
-      - ./data:/usr/share/nginx/html # Volitelně: udržuj obsah aplikace synchronizovaný
+      - web_data:/usr/share/nginx/html # Volitelně: udržuj obsah aplikace synchronizovaný
     restart: unless-stopped

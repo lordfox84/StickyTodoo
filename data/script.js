@@ -60,7 +60,6 @@
         task.innerHTML = `
             <${priorityTag}>${title}</${priorityTag}>
             <p>${description}</p>
-            <em>${priority}</em>
         `;
     }
 
